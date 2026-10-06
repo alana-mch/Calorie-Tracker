@@ -18,11 +18,65 @@ Built by fine-tuning EfficientNet-B0 on Food-101, with a "not food" class to rej
 Evaluated on the Food-101 test split (250 images per food) plus 250 non-food images, 102 classes in total.
 
 **Confidence threshold** 
-| Threshold | Images answered | Accuracy of answers |
+| Class                     | Precision | Recall | F1 Score | Size    |
+|---------------------------|-----------|--------|----------|---------|
+| lasagna                   | 0.74      | 0.71   | 0.72     | 250     |
+| lobster_bisque            | 0.87      | 0.80   | 0.83     | 250     |
+| lobster_roll_sandwich     | 0.88      | 0.90   | 0.89     | 250     |
+| macaroni_and_cheese       | 0.82      | 0.76   | 0.79     | 250     |
+| macarons                  | 0.94      | 0.96   | 0.95     | 250     |
+| miso_soup                 | 0.91      | 0.90   | 0.91     | 250     |
+| mussels                   | 0.94      | 0.86   | 0.90     | 250     |
+| nachos                    | 0.69      | 0.81   | 0.74     | 250     |
+| omelette                  | 0.71      | 0.65   | 0.68     | 250     |
+| onion_rings               | 0.89      | 0.88   | 0.89     | 250     |
+| oysters                   | 0.91      | 0.92   | 0.91     | 250     |
+| pad_thai                  | 0.90      | 0.88   | 0.89     | 250     |
+| paella                    | 0.86      | 0.78   | 0.82     | 250     |
+| pancakes                  | 0.85      | 0.82   | 0.83     | 250     |
+| panna_cotta               | 0.81      | 0.70   | 0.75     | 250     |
+| peking_duck               | 0.88      | 0.75   | 0.81     | 250     |
+| pho                       | 0.87      | 0.93   | 0.90     | 250     |
+| pizza                     | 0.81      | 0.89   | 0.85     | 250     |
+| pork_chop                 | 0.61      | 0.50   | 0.55     | 250     |
+| poutine                   | 0.88      | 0.84   | 0.86     | 250     |
+| prime_rib                 | 0.77      | 0.84   | 0.80     | 250     |
+| pulled_pork_sandwich      | 0.83      | 0.67   | 0.74     | 250     |
+| ramen                     | 0.92      | 0.81   | 0.86     | 250     |
+| ravioli                   | 0.63      | 0.62   | 0.62     | 250     |
+| red_velvet_cake           | 0.84      | 0.88   | 0.86     | 250     |
+| risotto                   | 0.71      | 0.67   | 0.69     | 250     |
+| samosa                    | 0.82      | 0.78   | 0.80     | 250     |
+| sashimi                   | 0.87      | 0.92   | 0.89     | 250     |
+| scallops                  | 0.70      | 0.61   | 0.65     | 250     |
+| seaweed_salad             | 0.90      | 0.90   | 0.90     | 250     |
+| shrimp_and_grits          | 0.69      | 0.68   | 0.69     | 250     |
+| spaghetti_bolognese       | 0.90      | 0.88   | 0.89     | 250     |
+| spaghetti_carbonara       | 0.90      | 0.94   | 0.92     | 250     |
+| spring_rolls              | 0.83      | 0.78   | 0.81     | 250     |
+| steak                     | 0.48      | 0.50   | 0.49     | 250     |
+| strawberry_shortcake      | 0.73      | 0.82   | 0.77     | 250     |
+| sushi                     | 0.84      | 0.83   | 0.83     | 250     |
+| tacos                     | 0.67      | 0.73   | 0.70     | 250     |
+| takoyaki                  | 0.87      | 0.86   | 0.87     | 250     |
+| tiramisu                  | 0.75      | 0.76   | 0.75     | 250     |
+| tuna_tartare              | 0.67      | 0.63   | 0.65     | 250     |
+| waffles                   | 0.83      | 0.88   | 0.85     | 250     |
+| not_food                  | 0.98      | 0.96   | 0.97     | 250     |
+
 
 
 **Most common confusions:** 
-
+steak predicted as filet_mignon: 41 times
+filet_mignon predicted as steak: 36 times
+beef_tartare predicted as tuna_tartare: 28 times
+pulled_pork_sandwich predicted as hamburger: 27 times
+pork_chop predicted as steak: 27 times
+cheesecake predicted as strawberry_shortcake: 24 times
+steak predicted as prime_rib: 22 times
+ravioli predicted as gnocchi: 21 times
+pork_chop predicted as filet_mignon: 21 times
+tuna_tartare predicted as beef_tartare: 20 times
 
 
 ## How it works
